@@ -15,7 +15,7 @@ export const styles = StyleSheet.create({
     zIndex: 1,
     backgroundColor: '#E6EEFA',
     padding: 10,
-    borderRadius:50
+    borderRadius: 50,
   },
   backgroundContainer: {
     position: 'absolute',
@@ -38,7 +38,7 @@ export const styles = StyleSheet.create({
     right: 0,
     bottom: 0,
     backgroundColor: '#E6EEFA',
-    borderRadius: 50 // Cor da sobreposição
+    borderRadius: 50, // Cor da sobreposição
   },
   image: {
     width: 100,
@@ -84,7 +84,7 @@ export const styles = StyleSheet.create({
   },
   column: {
     alignItems: 'center',
-    marginTop: -60
+    marginTop: -60,
   },
   mainText: {
     fontSize: 18,
@@ -123,14 +123,13 @@ export const styles = StyleSheet.create({
     marginBottom: 10, // Adiciona um espaçamento inferior
   },
   blueButton: {
-    backgroundColor:'#5790DF',
+    backgroundColor: '#5790DF',
     borderRadius: 30,
   },
   whiteButton: {
     backgroundColor: '#FFFFFF',
     borderColor: '#000000',
     borderRadius: 30,
-    
   },
   buttonText: {
     color: 'white',
@@ -162,8 +161,86 @@ export const styles = StyleSheet.create({
   },
   cameraButtonContainer: {
     position: 'absolute',
-    top: 40,
+    top: 50,
     right: 20,
     zIndex: 1,
   },
+  cameraButton: {
+    position: 'absolute',
+    top: 35,
+    right: 10,
+    width: 65, // Defina a largura do botão conforme necessário
+    height: 50, // Defina a altura do botão conforme necessário
+    backgroundColor: 'white',
+    borderRadius: 50, // Para um botão circular, use metade da largura/altura
+    overflow: 'hidden', // Para garantir que a imagem não ultrapasse o botão
+  },
+  cameraIcon: {
+    width: '100%',
+    height: '100%',
+    resizeMode: 'cover', // Para garantir que a imagem preencha todo o botão
+  },
+  switchCameraButton: {
+    backgroundColor: 'white',
+    borderRadius: 25,
+    padding: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  imagesContainer: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    justifyContent: 'space-between',
+    padding: 10,
+  },
+  subscriptionButton: {
+    position: 'absolute',
+    top: 100,
+    right: 10,
+    backgroundColor: 'white',
+    borderRadius: 25,
+    padding: 10,
+  },
+  subscriptionModalContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+  },
+  subscriptionModalContent: {
+    width: '80%',
+    backgroundColor: 'white',
+    borderRadius: 10,
+    padding: 20,
+    alignItems: 'center',
+  },
+  subscriptionTitle: {
+    fontSize: 18,
+    fontWeight: 'bold',
+    marginBottom: 20,
+  },
+  subscriptionOption: {
+    width: '100%',
+    padding: 10,
+    borderRadius: 5,
+    alignItems: 'center',
+    marginBottom: 10,
+    backgroundColor: '#5790DF',
+  },
+  subscriptionText: {
+    color: 'white',
+    fontWeight: 'bold',
+  },
+  closeButton: {
+    marginTop: 10,
+  },
+  closeButtonText: {
+    color: 'black',
+  },
+  subscriptionButtonText: {
+    fontSize: 16,
+    color: 'black',
+    marginLeft: 5, // Ajuste conforme necessário
+  },
+  
 });
